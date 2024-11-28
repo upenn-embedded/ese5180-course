@@ -1,0 +1,114 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 10px;
+    color: #2D3748;
+    /* Dark Charcoal */
+    background-color: #F0FFF4;
+    /* Light Mint */
+}
+
+/* Header Styles */
+header {
+    background-color: #2F855A;
+    /* Emerald Green */
+    color: #FFFFFF;
+    /* White Text */
+    padding: 1em 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-logo {
+    height: 50px;
+    width: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Navigation Links */
+nav a {
+    color: #ECC94B;
+    /* Golden Yellow */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C53030;
+    /* Cranberry Red */
+    text-decoration: underline;
+}
+
+/* Section Titles */
+section h2 {
+    color: #2F855A;
+    /* Emerald Green */
+    border-bottom: 2px solid #ECC94B;
+    /* Golden Yellow underline */
+    padding-bottom: 5px;
+}
+
+/* Buttons */
+.carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    color: #FFFFFF;
+    /* White */
+    border: none;
+    border-radius: 50%;
+}
+
+.carousel-btn:hover {
+    background-color: #C53030;
+    /* Cranberry Red */
+}
+
+/* Grid Images */
+.grid-container a {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-container a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #2F855A;
+    /* Emerald Green */
+    color: #FFFFFF;
+    /* White Text */
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive Image Container */
+.responsive-image-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.responsive-image-container img {
+    width: 100%;
+    height: auto;
+}

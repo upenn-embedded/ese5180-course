@@ -1,166 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>IoT Wireless, Security, & Scaling</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Montserrat", sans-serif
-    }
-
-    .w3-row-padding img {
-      margin-bottom: 12px
-    }
-
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
-      width: 120px;
-      background: #222;
-    }
-
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {
-      margin-left: 120px
-    }
-
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {
-      #main {
-        margin-left: 0
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESE 5180 IoT Wireless, Security, & Scaling</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
 </head>
 
-<body class="w3-white">
+<body>
+  <header>
 
-  <!-- Icon Bar (Sidebar - hidden on small screens) -->
-  <nav class="w3-sidebar w3-light-grey w3-bar-block w3-small w3-hide-small w3-center">
-    <!-- Avatar image in top left corner -->
-    <img src="imgs/penn.png" style="width:100%">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">
-      <i class="fa fa-home w3-xxlarge"></i>
-      <p>HOME</p>
-    </a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-book w3-xxlarge"></i>
-      <p>Course Overview</p>
-    </a>
-    <a href="#syllabus" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-eye w3-xxlarge"></i>
-      <p>Syllabus</p>
-    </a>
-    <a href="#schedule" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-tasks w3-xxlarge"></i>
-      <p>Schedule</p>
-    </a>
-
-    <a href="#resources" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-search w3-xxlarge"></i>
-      <p>Resources</p>
-    </a>
-    <a href="#staff" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-user w3-xxlarge"></i>
-      <p>Staff</p>
-    </a>
-    <a href="#blog" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-envelope w3-xxlarge"></i>
-      <p>Blog</p>
-    </a>
-  </nav>
-
-  <!-- Navbar on small screens (Hidden on medium and large screens) -->
-  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-    <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
-      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">COURSE OVERVIEW</a>
-      <a href="#syllabus" class="w3-bar-item w3-button" style="width:25% !important">SYLLABUS</a>
-      <a href="#schedule" class="w3-bar-item w3-button" style="width:25% !important">SCHEDULE</a>
-      <a href="#resources" class="w3-bar-item w3-button" style="width:25% !important">RESOURCES</a>
-      <a href="#staff" class="w3-bar-item w3-button" style="width:25% !important">STAFF</a>
-      <a href="#blog" class="w3-bar-item w3-button" style="width:25% !important">BLOG</a>
+    <div class="header-content">
+      <h1> </h1>
+      <img src="imgs/pennshield.png" alt="Course Logo" class="header-logo">
+      <h1>ESE 5180 IoT Wireless, Security, & Scaling</h1>
     </div>
-  </div>
+    <nav>
+      <!-- <a href="#demoday">Demo Day Fall 2024</a> -->
+      <!-- <a href="#gallery">Final Project Gallery</a> -->
+      <a href="#overview">Overview</a>
+      <a href="#syllabus">Syllabus</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#resources">Resources</a>
+      <!-- <a href="#finalproject">Final Project</a> -->
 
-  <!-- Page Content -->
-  <div class="w3-padding-large" id="main">
-    <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
-      <h1 class="w3-jumbo"><span class="w3-hide-small"></span>ESE5180 - IoT Wireless, Security, & Scaling</h1>
-    </header>
+    </nav>
+  </header>
 
-    <!-- About -->
-    <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
-      <h2 class="w3-text-light-black">Course Overview</h2>
-      <hr style="width:200px" class="w3-opacity">
+  <main>
+    <!-- <section id="gallery">
+            <div class="image-carousel">
+                <button class="carousel-btn prev-btn">❮</button>
+                <div class="carousel-images">
+                    <img src="imgs/carousel/car1.jpg" size="300px" alt="Carousel Image">
+                    <img src="imgs/carousel/car2.jpg" size="300px" alt="Carousel Image">
+                    <img src="imgs/carousel/car3.jpg" size="300px" alt="Carousel Image">
+                    <img src="imgs/carousel/car4.jpg" size="300px" alt="Carousel Image">
+                    <img src="imgs/carousel/car5.jpg" size="300px" alt="Carousel Image">
+                    <img src="imgs/carousel/car6.jpg" size="300px" alt="Carousel Image">
+                    <img src="imgs/carousel/car7.jpg" size="300px" alt="Carousel Image">
+                    <img src="imgs/carousel/car8.jpg" size="300px" alt="Carousel Image">
+                </div>
+                <button class="carousel-btn next-btn">❯</button>
+            </div>
+        </section> -->
+
+    <!-- <section id="demoday">
+            <h2>Demo Day Fall 2024</h2>
+            <div class="responsive-image-container">
+                <center><img src="imgs/f24demoday.png"></center>
+            </div>
+        </section> -->
+
+    <section id="overview">
+      <h2>Course Overview</h2>
       <p>ESE5180 answers the questions engineers have about scaling from a single prototype up to thousands of devices
         in the field. This class will cover automating build systems with Continuous Integration (CI), investigating
         various wireless protocols, integrating IoT security, and device fleet management. A final project will show the
         intersection of technical design with business planning in order to launch a device.
-      </p>
-      <p>
+
         Lectures are MW 1:45-3:14pm
+        <br><br>
+        Fall 2024: Lectures are MW 1:45-3:14pm in Towne 307
       </p>
+    </section>
 
-      <img src="imgs/nrf52840.webp" style="width:50%"> <img src="imgs/sdr.webp" style="width:50%">
-    </div>
+    <section id="syllabus">
+      <h2>Syllabus</h2>
+      <p>Access the <a
+          href="https://docs.google.com/document/d/1XljCA8Q9VfrMfRiCEpADWrj2lGUGyTcQDzgg7sT2g_g/edit?usp=sharing">full
+          syllabus here</a>.</p>
+    </section>
+
+    <section id="schedule">
+      <h2>Schedule</h2>
+
+      <p>Access the <a
+          href="https://docs.google.com/spreadsheets/d/1E_JRgFfWZUm_RtBo7IKvmSO5DFB95Glt8RLukPWqTQY/edit?gid=2146175098#gid=2146175098"
+          target="_blank">full schedule here</a>.</p>
+      <iframe width=100% height=500
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT4fqwR2vECEzNYQ4dGHg4sSBF6ezXk_p5ksrXzqBQKeUrZLoxzgvIipiPffUSRkwAXnIWdZrbLr8N_/pubhtml?gid=2146175098&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </section>
 
 
-    <!-- Syllabus -->
-    <div class="w3-padding-64 w3-content w3-text-black" id="syllabus">
-      <h3 class="w3-padding-16 w3-text-light-black"><b>Syllabus</b></h3>
-      <a
-        href="https://docs.google.com/document/d/1XljCA8Q9VfrMfRiCEpADWrj2lGUGyTcQDzgg7sT2g_g/edit?usp=sharing">Link</a>
-      <br><iframe width=800 height=1000
-        src="https://docs.google.com/document/d/e/2PACX-1vTMJrMFyvb4ViEyPXgh-Ip4a0kbd49cmB5TIRST0bgyqqXz_RWVDXHiVV5NYf3198ko9sOfVLmEgOFA/pub?embedded=true"></iframe>
-    </div>
+    <section id="finalproject">
+      <h2>Final Project</h2>
+      The goal is to find an application for IoT wireless technology, then develop that concept in engineering and
+      business aspects. Students leverage the skills and knowledge gained from the preceding three labs - how to develop
+      using a modern build system, how to choose an appropriate wireless communication system for your application, and
+      how to implement appropriate security features. We want students to learn how to find a problem in the world,
+      design a solution, develop a prototype that de-risksthe most important aspects, and pitch that idea to people who
+      might invest in your idea.
 
-    <!-- Schedule -->
-    <div class="w3-padding-64 w3-content w3-text-black" id="schedule">
-      <h3 class="w3-padding-16 w3-text-light-black"><b>Schedule</b></h3>
-      <iframe width=100% height=1000
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT4fqwR2vECEzNYQ4dGHg4sSBF6ezXk_p5ksrXzqBQKeUrZLoxzgvIipiPffUSRkwAXnIWdZrbLr8N_/pubhtml?gid=241455595&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-    </div>
 
-    <!-- Resources -->
-    <div class="w3-padding-64 w3-content w3-text-black" id="resources">
-      <h3 class="w3-padding-16 w3-text-light-black"><b>Resources</b></h3>
-      <a href="https://github.com/ese5180/ese5180-course">Course Github
-        Repository</a>
+      <!-- <h3>Spring 2024</h3>
+            <div class="grid-container">
+                <a href="https://ese5160.github.io/a14g-final-submission-t01-magic-pill-box/"><img
+                        src="imgs/s24/t01.jpg" alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t02-you-penn-engine-ears/"><img
+                        src="imgs/s24/t02.jpg" alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t03-outdoor-innovators/"><img
+                        src="imgs/s24/t03.jpg" alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t04-ad-astra/"><img src="imgs/s24/t04.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t05-product-scanner/"><img
+                        src="imgs/s24/t05.jpg" alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t06-logic-ninjas/"><img src="imgs/s24/t06.jpg"
+                        alt="TeamImage" width="100px"></a>
 
-    </div>
 
-    <!-- Staff -->
-    <div class="w3-padding-64 w3-content w3-text-black" id="staff">
-      <h3 class="w3-padding-16 w3-text-light-black"><b>Staff</b></h3>
-      Coming soon!
-    </div>
+                <a href="https://ese5160.github.io/a14g-final-submission-t07-the-trailblazers/"><img
+                        src="imgs/s24/t07.jpg" alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t08-magic-curtain/"><img src="imgs/s24/t08.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t09-k-f-c/"><img src="imgs/s24/t09.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t10-fish-delight/"><img src="imgs/s24/t10.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/iHealth-SAMW25-Pill-Dispenser/"><img src="imgs/s24/t11.png"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t12-gamers/"><img src="imgs/s24/t12.jpg"
+                        alt="TeamImage" width="100px"></a>
 
-    <!-- Blog -->
-    <div class="w3-padding-64 w3-content w3-text-black" id="blog">
-      <h3 class="w3-padding-16 w3-text-light-black"><b>Blog</b></h3>
-      Coming soon!
-    </div>
+                <a href="https://ese5160.github.io/a14g-final-submission-t13-drink-god/"><img src="imgs/s24/t13.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t16-ecosavers/"><img src="imgs/s24/t16.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t17-team-gotcha/"><img src="imgs/s24/t17.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t18-dataracers/"><img src="imgs/s24/t18.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t19-pet-feeder/"><img src="imgs/s24/t19.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t20-gold-rush/"><img src="imgs/s24/t20.jpg"
+                        alt="TeamImage" width="100px"></a>
 
-  </div>
 
-  <footer class="w3-content w3-padding-64 w3-text-black w3-xlarge">
-    Thanks to <a href="https://tinyml.seas.upenn.edu/#">ESE3600: TinyML</a> for the webpage template!<br>
+                <a href="https://ese5160.github.io/a14g-final-submission-t21-airlight/"><img src="imgs/s24/t21.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t23-mcu-wanda-lock/"><img
+                        src="imgs/s24/t23.jpg" alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t24-team-that-cares/"><img
+                        src="imgs/s24/t24.jpg" alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t26-circuit-crusaders/"><img
+                        src="imgs/s24/t26.jpg" alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t27-help/"><img src="imgs/s24/t27.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://github.com/ese5160/a14g-final-submission-t28-switchlink"><img src="imgs/s24/t28.png"
+                        alt="TeamImage" width="100px"></a>
+
+                <a href="https://ese5160.github.io/a14g-final-submission-t15-comfortzone/"><img src="imgs/s24/t15.jpg"
+                        alt="TeamImage" width="100px"></a>
+                <a href="https://ese5160.github.io/a14g-final-submission-t14-humidifierz/"><img src="imgs/s24/t14.jpg"
+                        alt="TeamImage" width="100px"></a>
+            </div>
+            <h3>Previous Semesters</h3>
+            <ul>
+                <li><a href="https://ese5160-spring-2023.devpost.com/project-gallery">Spring 2023</a></li>
+                <li><a href="https://ese516-spring2022.devpost.com/project-gallery">Spring 2022</a></li>
+                <li><a href="https://ese516-spring-2021.devpost.com/project-gallery">Spring 2021</a></li>
+                <li><a href="https://ese516-fall-2019.devpost.com/project-gallery">Fall 2019</a></li>
+                <li><a href="https://ese516s19.devpost.com/project-gallery">Spring 2019</a></li>
+                <li><a href="https://ese516-2018s.devpost.com/project-gallery">Spring 2018</a></li>
+                <li><a href="https://ese680as17.devpost.com/project-gallery">Spring 2017</a></li>
+            </ul> -->
+
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://drive.google.com/drive/folders/1D_fpu2m-GYivN60n1Wo9Ajrvj9Xubw4E?usp=sharing"
+            target="_blank">Google Drive folder with lectures, assignments,
+            and course resources (accessible by Penn SEAS email only)</a></li>
+        <li><a href="https://edstem.org/us/courses/59606/discussion/" target="_blank">Ed Discussion (our
+            communication channel for the semester)</a></li>
+        <li><a href="https://www.gradescope.com/courses/789906" target="_blank">Gradescope (assignment
+            submission & regrade requests)</a></li>
+        <li><a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd9mwjALjpCHVi_PM2woHpX41Yz78oqgb-6Pttvsu5r7NOlmg/viewform"
+            target="_blank">Request Detkin & Ketterer 24-hour access</a></li>
+        <li><a href="https://venturelab.smapply.io/prog/venture_lab_membership/" target="_blank">Request Venture
+            Labs Access</a></li>
+        <li><a href="https://meamlabs.seas.upenn.edu/garage-lab-and-tool-library/" target="_blank">Request Penn
+            Garage Lab Access</a>
+        </li>
+        <li><a href="https://meamlabs.seas.upenn.edu/rapid-prototyping-lab/" target="_blank">Request Rapid
+            Prototyping Lab (RPL)
+            Access</a></li>
+        <li><a href="https://forms.gle/hTW3kSn3QkpqTqC69" target="_blank">Submit Course Feedback
+            Anonymously</a></li>
+      </ul>
+    </section>
+
+
+  </main>
+
+  <footer>
   </footer>
 
-  <!-- END PAGE CONTENT -->
-
+  <script src="script.js"></script>
 </body>
 
 </html>
